@@ -6,7 +6,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 export class ErrorMsgDirective implements OnInit{
   
   htmlElement : ElementRef<HTMLElement>;
-  @Input() color : string = 'red';
+  @Input() color : string = 'blue';
 
   constructor( private element : ElementRef<HTMLElement>) {
     this.htmlElement = element;
