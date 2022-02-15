@@ -10,12 +10,10 @@ export class ErrorMsgDirective implements OnInit{
 
   constructor( private element : ElementRef<HTMLElement>) {
     this.htmlElement = element;
-
   }
   ngOnInit(): void {
     this.setColor();
   }
-
   setColor () :void{
     this.htmlElement.nativeElement.style.color = this.color;
   }
